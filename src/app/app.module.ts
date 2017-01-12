@@ -15,6 +15,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { DragulaModule, DragulaService }   from 'ng2-dragula';
+import { DataService } from './data.service'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { DragulaModule, DragulaService }   from 'ng2-dragula';
   ],
   providers: [
     GithubService,
-    DragulaService
+    DragulaService, 
+    DataService,
   ],
   bootstrap: [ AppComponent ]
 })
