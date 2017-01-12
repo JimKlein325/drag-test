@@ -14,6 +14,7 @@ import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { DragulaModule, DragulaService }   from 'ng2-dragula';
 
 @NgModule({
   declarations: [
@@ -27,16 +28,19 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    DragulaModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
-    GithubService
+    GithubService,
+    DragulaService
   ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
+ 
 
 }

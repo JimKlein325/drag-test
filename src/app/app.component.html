@@ -1,6 +1,44 @@
+
 <h3>
   Angular 2 Seed
 </h3>
+<p>hello</p>
+<ul>
+    <li><p>test  </p></li>
+  <li>test {{placeholder}}</li>
+
+  </ul>
+  <div>
+    <div id='container1' [dragula]='"d1"'>
+    <div>
+      One
+    </div>
+    <div>
+      Two
+    </div>
+    </div>
+    <div id='container2' [dragula]='"d1"'>
+    <div>
+      Three
+    </div>
+    <div>
+      Four
+    </div>
+    </div>
+
+  </div>
+<ul [dragula]='"bag-one"' [dragulaModel]='q1'>
+  <li>test {{placeholder}}</li>
+  <li *ngFor="let item of q1"
+  [id]="g">
+    {{item}}
+  </li>
+</ul>
+<ul [dragula]='"bag-one"' [dragulaModel]='q2'>
+  <li *ngFor="let item of q2">
+    {{item}}
+    </li>
+
 <nav>
 	<a [routerLink]="['/']">
     Home
@@ -23,7 +61,45 @@
 	<router-outlet></router-outlet>
 </main>
 
-
+    <!--
+<div class='wrapper'>
+      <div class='container' id="con1" dragula='"bag-c"'>
+        <div>You can move these elements between these two containers</div>
+        <div>Moving them anywhere else isn't quite possible</div>
+        <div>There's also the possibility of moving elements around in the same container, changing their position</div>
+      </div>
+      <div class='container' id="con2" dragula='"bag-b"'>
+        <div>This is the default use case. You only need to specify the containers you want to use</div>
+        <div><table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table></div>
+        <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>
+      </div>     
+      <div class='container' id="con4" dragula='"second-bag"'>
+        <div>This is the default use case. You only need to specify the containers you want to use</div>
+        <div>More interactive use cases lie ahead</div>
+        <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>
+      </div>
+    </div>
+    <!--
+<ul [dragula]='"bag-one"' [dragulaModel]='items'>
+  <li *ngFor="let item of items"></li>
+</ul>
+-->
 <footer>
   © 2016
 </footer>

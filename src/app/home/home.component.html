@@ -1,2 +1,19 @@
 <h3>Home Component</h3>
 <p>Welcome to Angular Seed</p>
+
+<p>hello</p>
+<ul>
+    <li><p>test  </p></li>
+  <li>test 1{{placeholder}}</li>
+
+  </ul>
+<ul [dragula]='"bag-one"' [dragulaModel]='q1'>
+  <li>test 2{{placeholder}}</li>
+  <li *ngFor="let item of q1">
+    {{item}}
+  </li>
+</ul>
+<ul [dragula]='"bag-two"' [dragulaModel]='q2'>
+  <li *ngFor="let item of q2">
+    {{item}}
+</li>
