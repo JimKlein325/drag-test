@@ -1,48 +1,67 @@
-
 <h3>
   Angular 2 Seed
 </h3>
-<p>hello</p>
+<p>Drag testing</p>
 <ul>
-    <li><p>test  </p></li>
-  <li>test {{placeholder}}</li>
-
-  </ul>
-  <div>
-    <div id='container1' [dragula]='"d1"'>
-    <div>
+  <li *ngFor="let problem of problems">
+    {{ problem.problem }} {{ problem.date }} {{ problem.status }}
+  </li>
+</ul><ul>
+  <li *ngFor="let medication of medications">
+    {{ medication.name }} {{ medication.directions }} {{ medication.startDate }}
+  </li>
+</ul>
+<div>
+  <div id='container1' [dragula]='"d1"'>
+    <div id='One'>
       One
     </div>
-    <div>
+    <div id='generatedTable'>
       <table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
-</table>
+        <tr>
+          <th *ngFor='let head of problem.headers'>
+            {{head}}
+          </th>
+        </tr>
+        <tr>
+          <td *ngFor='let val of problem.values'>
+            {{val}}
+          </td>
+        </tr>
+
+      </table>
     </div>
+    <div id='table'>
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
     </div>
-    <div id='container2' [dragula]='"d1"'>
-    <div>
+  </div>
+  <div id='container2' [dragula]='"d1"'>
+    <div id='three'>
       Three
     </div>
-    <div>
+    <div id='four'>
       Four
     </div>
-    </div>
-
   </div>
+
+</div>
+<!--
 <ul [dragula]='"bag-one"' [dragulaModel]='q1'>
   <li>test {{placeholder}}</li>
   <li *ngFor="let item of q1"
@@ -54,30 +73,27 @@
   <li *ngFor="let item of q2">
     {{item}}
     </li>
-
+-->
 <nav>
-	<a [routerLink]="['/']">
+  <a [routerLink]="['/']">
     Home
-  </a>
-  |
-	<a [routerLink]="['/about']">
+  </a> |
+  <a [routerLink]="['/about']">
     About
-  </a>
-  |
-	<a [routerLink]="['/github', 'angular']">
+  </a> |
+  <a [routerLink]="['/github', 'angular']">
     Github Repos
-  </a>
-  |
-	<a [routerLink]="['/contact']">
+  </a> |
+  <a [routerLink]="['/contact']">
     Contact Us
   </a>
 </nav>
 
 <main>
-	<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
 
-    <!--
+<!--
 <div class='wrapper'>
       <div class='container' id="con1" dragula='"bag-c"'>
         <div>You can move these elements between these two containers</div>

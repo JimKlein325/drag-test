@@ -1,0 +1,22 @@
+{
+            "emrData": {
+                "problems":
+                [
+                    {
+                        "problem": "Diabetes Type II",
+                        "date": "Dec. 18, 2016",
+                        "status": "Active"
+                    }
+                ],
+                "medications": [
+                    {
+                        "name": "Atenolol 25 MG Oral Tablet",
+                        "directions": "1 every 12 hours Orally",
+                        "startDate": "Mar 18, 2012",
+                        "status": "Active",
+                        "indications": "Hypertension",
+                        "fillInstructions": "-none-"
+                    }
+                ]
+            }
+        }

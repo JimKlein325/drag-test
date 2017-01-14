@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DragulaModule, DragulaService }   from 'ng2-dragula';
 import { DataService } from './data.service'
 
+
 @NgModule({
   declarations: [
     AppComponent,
