@@ -49,6 +49,11 @@ export class EMRComponent {
         this.emrData.problems = data.emrData.problems;
         this.medications = data.emrData.medications;
         this.functionalAndCStatus = data.emrData.functionalAndCognitiveStatus;
+        this.allergies = data.emrData.allergies;
+        this.immunizations = data.emrData.immunizations;
+        this.vitalSigns = data.emrData.vitalSigns;
+        this.results = data.emrData.results;
+
         // this.placeholder = String(this.emrData.problems.length);
         // console.log("# problems: " + this.emrData.problems.length + this.placeholder)
         console.log("onInit: " + this.emrData.problems[0]["problem"]);

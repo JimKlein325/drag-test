@@ -1,9 +1,9 @@
 export class PanelInfo {
-    problemTitle: string="Problems";
-    problemHeaders: string[]=["Problem", "Date", "Status"];
+    problemsTitle: string="Problems";
+    problemsHeaders: string[]=["Problem", "Date", "Status"];
 
     medicationsTitle: string="Medications";
-    medicationsHeaders: string[]=["Medication", "Instructions", "Dosage", "Effective Dates (start - stop)", "Status"];
+    medicationsHeaders: string[]=["Medication", "Instructions", "Dosage", "Effective Dates (start - stop)", "Status", "Fill Instructions"];
 
     functionalAndCStatusTitle: string="Functional and cognitive status";
     functionalAndCStatusHeaders: string[]=["Assessment", "Date", "Results", "Comments"];

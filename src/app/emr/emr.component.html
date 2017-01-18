@@ -1,15 +1,27 @@
 <div class="row">
     <div [dragula]='"d1"' class="col-md-5">
         <div id="problems">
-            <problems [problems]='problems' [title]='"Problems"' [headers]='["Problem", "Date", "Status"]'></problems>
+            <problems [problems]='problems' [title]='panelInfo.problemsTitle' [headers]='panelInfo.problemsHeaders'></problems>
         </div>
         <div id="functionalAndCStatus">
-            <problems [problems]='functionalAndCStatus' [title]='panelInfo.functionalAndCStatusTitle' [headers]='["Problem", "Date", "Status"]'></problems>
+            <problems [problems]='functionalAndCStatus' [title]='panelInfo.functionalAndCStatusTitle' [headers]='panelInfo.functionalAndCStatusHeaders'></problems>
+        </div>
+        <div id="results">
+            <problems [problems]='results' [title]='panelInfo.resultsTitle' [headers]='panelInfo.resultsHeaders'></problems>
+        </div>
+        <div id="allergies">
+            <problems [problems]='allergies' [title]='panelInfo.allergiesTitle' [headers]='panelInfo.allergiesHeaders'></problems>
         </div>
     </div>
     <div [dragula]='"d1"' class="col-md-5">
-        <div id="problems2">
-            <problems [problems]='medications' [title]='"Medications"' [headers]='["Name", "Directions", "Start Date", "Status", "Indications", "Fill Instructions"]'></problems>
+        <div id="medications">
+            <problems [problems]='medications' [title]='panelInfo.medicationsTitle' [headers]='panelInfo.medicationsHeaders'></problems>
+        </div>
+        <div id="immunizations">
+            <problems [problems]='immunizations' [title]='panelInfo.immunizationsTitle' [headers]='panelInfo.immunizationsHeaders'></problems>
+        </div>
+        <div id="vitalSigns">
+            <problems [problems]='vitalSigns' [title]='panelInfo.vitalSignsTitle' [headers]='panelInfo.vitalSignsHeaders'></problems>
         </div>
     </div>
 </div>
