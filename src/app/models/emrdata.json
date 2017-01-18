@@ -6,6 +6,11 @@
                         "problem": "Diabetes Type II",
                         "date": "Dec. 18, 2016",
                         "status": "Active"
+                    },
+                    {
+                        "problem": "Hypertension",
+                        "date": "Jan. 8, 2014",
+                        "status": "Active"
                     }
                 ],
                 "medications": [

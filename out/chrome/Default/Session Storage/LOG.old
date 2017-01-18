@@ -1,6 +1,25 @@
-2017/01/13-15:47:58.570 8764 Reusing MANIFEST c:\Users\Jim\Desktop\drag-test\out\chrome\Default\Session Storage/MANIFEST-000001
-2017/01/13-15:47:58.571 8764 Recovering log #4
-2017/01/13-15:47:58.572 8764 Reusing old log c:\Users\Jim\Desktop\drag-test\out\chrome\Default\Session Storage/000004.log 
-2017/01/13-15:49:05.731 8488 Level-0 table #7: started
-2017/01/13-15:49:05.748 8488 Level-0 table #7: 96955 bytes OK
-2017/01/13-15:49:05.790 8488 Delete type=0 #4
+2017/01/17-10:40:03.795 11632 Reusing MANIFEST c:\Users\Jim\Desktop\drag-test\out\chrome\Default\Session Storage/MANIFEST-000001
+2017/01/17-10:40:03.796 11632 Recovering log #100
+2017/01/17-10:40:03.798 11632 Level-0 table #103: started
+2017/01/17-10:40:03.827 11632 Level-0 table #103: 96594 bytes OK
+2017/01/17-10:40:03.833 11632 Delete type=0 #100
+2017/01/17-10:40:03.835 5744 Compacting 4@0 + 2@1 files
+2017/01/17-10:40:04.222 5744 Generated table #105@0: 1070 keys, 2116642 bytes
+2017/01/17-10:40:04.317 5744 Generated table #106@0: 408 keys, 783923 bytes
+2017/01/17-10:40:04.317 5744 Compacted 4@0 + 2@1 files => 2900565 bytes
+2017/01/17-10:40:04.337 5744 compacted to: files[ 0 2 0 0 0 0 0 ]
+2017/01/17-10:40:04.338 5744 Delete type=2 #92
+2017/01/17-10:40:04.339 5744 Delete type=2 #93
+2017/01/17-10:40:04.340 5744 Delete type=2 #96
+2017/01/17-10:40:04.341 5744 Delete type=2 #98
+2017/01/17-10:40:04.341 5744 Delete type=2 #101
+2017/01/17-10:40:04.342 5744 Delete type=2 #103
+2017/01/17-10:42:03.930 5744 Level-0 table #108: started
+2017/01/17-10:42:03.938 5744 Level-0 table #108: 95964 bytes OK
+2017/01/17-10:42:03.943 5744 Delete type=0 #104
+2017/01/17-11:16:34.882 5744 Level-0 table #110: started
+2017/01/17-11:16:34.894 5744 Level-0 table #110: 95172 bytes OK
+2017/01/17-11:16:34.899 5744 Delete type=0 #107
+2017/01/17-11:36:21.329 5744 Level-0 table #112: started
+2017/01/17-11:36:21.339 5744 Level-0 table #112: 35014 bytes OK
+2017/01/17-11:36:21.344 5744 Delete type=0 #109

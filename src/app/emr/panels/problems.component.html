@@ -1,0 +1,13 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{title}}
+    </div>
+    <table class="table-responsive table-bordered table-striped">
+        <tr>
+            <th *ngFor='let header of headers'>{{header}}</th>
+        </tr>
+        <tr *ngFor="let problem of problems">
+            <td *ngFor='let element of generateArray(problem)'>{{element}}</td>
+        </tr>
+    </table>
+</div>

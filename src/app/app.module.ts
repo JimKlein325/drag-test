@@ -16,7 +16,9 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { DragulaModule, DragulaService }   from 'ng2-dragula';
 import { DataService } from './data.service'
-
+import { EMRComponent } from './emr/emr.component'
+import { ProblemsComponent} from './emr/panels/problems.component';
+import { PanelRowComponent} from './emr/panels/row.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { DataService } from './data.service'
     RepoListComponent,
     RepoDetailComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    EMRComponent,
+    ProblemsComponent,
+    PanelRowComponent,
   ],
   imports: [
     BrowserModule,
