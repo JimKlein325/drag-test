@@ -1,4 +1,4 @@
-export class panelInfo {
+export class PanelInfo {
     problemTitle: string="Problems";
     problemHeaders: string[]=["Problem", "Date", "Status"];
 

@@ -22,7 +22,24 @@
                         "indications": "Hypertension",
                         "fillInstructions": "-none-"
                     }
+                ],
+
+                "functionalAndCognitiveStatus": [
+                    {
+                        "assessment": "Functional Status",
+                        "date": "August 15 2012, 5:32pm",
+                        "results": "No impairment",
+                        "commets": ""
+                    },
+                    {
+                        "assessment": "Functional Status",
+                        "date": "August 15 2012, 5:32pm",
+                        "results": "No impairment",
+                        "commets": ""
+                    }
+                    
                 ]
                 
-            }
+
+            } 
         }

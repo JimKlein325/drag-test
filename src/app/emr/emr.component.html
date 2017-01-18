@@ -3,6 +3,9 @@
         <div id="problems">
             <problems [problems]='problems' [title]='"Problems"' [headers]='["Problem", "Date", "Status"]'></problems>
         </div>
+        <div id="functionalAndCStatus">
+            <problems [problems]='functionalAndCStatus' [title]='panelInfo.functionalAndCStatusTitle' [headers]='["Problem", "Date", "Status"]'></problems>
+        </div>
     </div>
     <div [dragula]='"d1"' class="col-md-5">
         <div id="problems2">
