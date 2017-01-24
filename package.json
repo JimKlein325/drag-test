@@ -50,10 +50,7 @@
     "webpack-merge": "^0.15.0"
   },
   "keywords": [
-    "Angular2",
-    "angular2-seed",
-    "official angular 2 seed",
-    "official angular2 seed"
+    "Angular2"
   ],
   "repository": {
     "type": "git",
