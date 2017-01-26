@@ -1,8 +1,8 @@
-<div class="panel panel-primary">
+<div class="panel panel-primary" [style.overflow-x]="toggleScroll" #panel>
     <div class="panel-heading">
         {{title}}
     </div>
-    <table class="table-responsive table-bordered table-striped">
+    <table style="width:100%;" class="table-responsive table-bordered table-striped">
         <tr>
             <th *ngFor='let header of headers'>{{header}}</th>
         </tr>
