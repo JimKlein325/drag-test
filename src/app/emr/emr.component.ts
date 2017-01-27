@@ -56,12 +56,10 @@ export class EMRComponent {
 
         // this.placeholder = String(this.emrData.problems.length);
         // console.log("# problems: " + this.emrData.problems.length + this.placeholder)
-        console.log("onInit: " + this.emrData.problems[0]["problem"]);
+        console.log("emr.comonent:  onInit: " + this.emrData.problems[0]["problem"]);
       },
       error => console.log(<any>error.message)
       );
-      let a = this.problems;
-      console.log("onInit for app component");
   }
 
 }

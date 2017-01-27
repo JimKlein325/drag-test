@@ -5,7 +5,6 @@
         <a class="navbar-brand" href="#">Recentia Health</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Today's Patients</a></li>
         <li><a href="#">Login</a></li>
       </ul>
@@ -15,12 +14,11 @@
 
 <div class="row container-fluid">
   <div id="sidebar" class="col-md-2">
-    <span id="username">Sam Hastings</span>
     <ul class="nav">
       <li class="active"><a [routerLink]="['/']"> Home</a></li>
-      <li><a [routerLink]="['/about']">About</a></li>
-      <li> <a [routerLink]="['/github', 'angular']">Github Repos</a></li>
-      <li> <a [routerLink]="['/contact']">Contact Us</a></li>
+      <li><a [routerLink]="['/about']">Patient Checklist</a></li>
+      <li> <a [routerLink]="['/github', 'angular']">Dose Response</a></li>
+      <li> <a [routerLink]="['/contact']">Clinical Events</a></li>
       <li> <a [routerLink]="['/emr']">Patient EMR</a></li>
     </ul>
   </div>
