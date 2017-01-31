@@ -13,7 +13,11 @@ export class ProblemsComponent implements OnInit {
     @Input() problems: any[];
     @ViewChild('panel') private panelContainer: ElementRef;
     private toggleScroll: string = "false";
-
+    opened: Boolean = true;
+    
+    toggleTable () {
+      this.opened = !this.opened;
+    }
     generateArray(obj) {
         return Object.keys(obj).map((key) => {
             if (key != "headers") {
@@ -22,15 +26,9 @@ export class ProblemsComponent implements OnInit {
         });
     }
 
-    // toggleScroll(): boolean {
-    //     let element = this.panelContainer.nativeElement;
-
-    //     return element.offsetWidth > 200 ? true : false;
-    // }
-
     ngOnInit() {
-                let e = this.panelContainer.nativeElement;
-        this.toggleScroll = e.offsetWidth < 630  ? "scroll" : "hidden";
+        let e = this.panelContainer.nativeElement;
+        this.toggleScroll = e.offsetWidth < 630 ? "scroll" : "hidden";
     }
 
     ngOnChanges() {
