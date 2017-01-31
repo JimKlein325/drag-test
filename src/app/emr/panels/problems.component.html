@@ -2,7 +2,7 @@
     <div class="panel-heading" (click)="toggleTable()">
         {{title}}
     </div>
-    <table style="width:100%;"  [ngClass]="{hide: !opened}" class="table-responsive table-bordered table-striped">
+    <table style="width:100%;"  [style.display]="opened ? 'inline' : 'none'" class="table-responsive table-bordered table-striped">
         <tr>
             <th *ngFor='let header of headers'>{{header}}</th>
         </tr>

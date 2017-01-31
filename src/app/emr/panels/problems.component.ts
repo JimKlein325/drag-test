@@ -12,9 +12,9 @@ export class ProblemsComponent implements OnInit {
     @Input() headers: string[];
     @Input() problems: any[];
     @ViewChild('panel') private panelContainer: ElementRef;
-    private toggleScroll: string = "false";
+    private toggleScroll: string = "scroll";
     opened: Boolean = true;
-    
+
     toggleTable () {
       this.opened = !this.opened;
     }
