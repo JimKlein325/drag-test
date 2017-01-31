@@ -5,6 +5,7 @@ import { Problem } from '../models/problem';
 import { Medication } from '../models/medication';
 import { EMRData } from '../data.service';
 import { PanelInfo } from './panels/panelInfo'
+// import { InfoPanelComponent } from './panels/infoPanel';
 
 
 @Component({

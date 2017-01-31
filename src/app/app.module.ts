@@ -17,7 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DragulaModule, DragulaService }   from 'ng2-dragula';
 import { DataService } from './data.service'
 import { EMRComponent } from './emr/emr.component'
-import { ProblemsComponent} from './emr/panels/problems.component';
+import { InfoPanelComponent} from './emr/panels/infoPanel.component';
 import { PanelRowComponent} from './emr/panels/row.component';
 
 @NgModule({
@@ -30,7 +30,7 @@ import { PanelRowComponent} from './emr/panels/row.component';
     HomeComponent,
     ContactComponent,
     EMRComponent,
-    ProblemsComponent,
+    InfoPanelComponent,
     PanelRowComponent,
   ],
   imports: [

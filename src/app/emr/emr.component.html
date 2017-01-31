@@ -1,27 +1,32 @@
 <div class="row">
     <div [dragula]='"d1"' class="col-md-5">
         <div id="problems">
-            <problems [problems]='problems' [title]='panelInfo.problemsTitle' [headers]='panelInfo.problemsHeaders'></problems>
+
+            <infoPanel [dataItems]='problems' [title]='panelInfo.problemsTitle' [headers]='panelInfo.problemsHeaders'></infoPanel>
         </div>
+
         <div id="functionalAndCStatus">
-            <problems [problems]='functionalAndCStatus' [title]='panelInfo.functionalAndCStatusTitle' [headers]='panelInfo.functionalAndCStatusHeaders'></problems>
+            <infoPanel [dataItems]='functionalAndCStatus' [title]='panelInfo.functionalAndCStatusTitle' [headers]='panelInfo.functionalAndCStatusHeaders'></infoPanel>
         </div>
         <div id="results">
-            <problems [problems]='results' [title]='panelInfo.resultsTitle' [headers]='panelInfo.resultsHeaders'></problems>
+            <infoPanel [dataItems]='results' [title]='panelInfo.resultsTitle' [headers]='panelInfo.resultsHeaders'></infoPanel>
         </div>
         <div id="allergies">
-            <problems [problems]='allergies' [title]='panelInfo.allergiesTitle' [headers]='panelInfo.allergiesHeaders'></problems>
+            <infoPanel [dataItems]='allergies' [title]='panelInfo.allergiesTitle' [headers]='panelInfo.allergiesHeaders'></infoPanel>
         </div>
+        
     </div>
     <div [dragula]='"d1"' class="col-md-5">
+
         <div id="medications">
-            <problems [problems]='medications' [title]='panelInfo.medicationsTitle' [headers]='panelInfo.medicationsHeaders'></problems>
+            <infoPanel [dataItems]='medications' [title]='panelInfo.medicationsTitle' [headers]='panelInfo.medicationsHeaders'></infoPanel>
         </div>
         <div id="immunizations">
-            <problems [problems]='immunizations' [title]='panelInfo.immunizationsTitle' [headers]='panelInfo.immunizationsHeaders'></problems>
+            <infoPanel [dataItems]='immunizations' [title]='panelInfo.immunizationsTitle' [headers]='panelInfo.immunizationsHeaders'></infoPanel>
         </div>
         <div id="vitalSigns">
-            <problems [problems]='vitalSigns' [title]='panelInfo.vitalSignsTitle' [headers]='panelInfo.vitalSignsHeaders'></problems>
+            <infoPanel [dataItems]='vitalSigns' [title]='panelInfo.vitalSignsTitle' [headers]='panelInfo.vitalSignsHeaders'></infoPanel>
         </div>
+
     </div>
 </div>
